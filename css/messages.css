@@ -1,0 +1,11 @@
+input[type = text] {
+  width: 85%;
+}
+
+input[type = submit] {
+  background-color: rgb(233, 233, 108);
+  color: #333333;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
