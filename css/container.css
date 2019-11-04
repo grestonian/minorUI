@@ -1,5 +1,5 @@
 .container {
-  background-image: url("../slideshow/1.jpg");
+  background: #408080;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -9,14 +9,14 @@
   position: fixed;
   width: 60%;
   background: rgba(255, 255, 255, 0.1);
-  letter-spacing: 5px;
+  /* letter-spacing: 5px; */
   top: 20%;
   left: 20%;
   text-align: center;
-  transition: ease-in-out 0.9s;
+  transition: transform 0.5s ease;
 }
 .logo {
-  margin: 0px auto;
+  /* margin: 0px auto; */
   font-size: 150px;
   font-family: 'Monoton', cursive;
   color: rgb(255, 255, 89);
@@ -26,6 +26,7 @@
   width: 100%;
   height: 20px;
   background: rgb(255, 255, 89);
+  transition: opacity .5s ease-in;
 }
 
 .motto {
@@ -35,7 +36,28 @@
   font-weight: bolder;
   text-align: center;
   margin-top: 30%;
+  position: relative;
+  transition: opacity .5s ease-in .3s;
 }
+
+.logo-alone:hover {
+  animation: pop .5s 1;
+}
+
+@keyframes pop {
+  0% {
+    font-size: 150px;
+  }
+
+  50% {
+    font-size: 99px;
+  }
+
+  100% {
+    font-size: 150px;
+  }
+}
+
 
 /* Start Button */
 #button {
@@ -47,10 +69,11 @@
   font-size: 28px;
   padding: 10px;
   width: 20%;
-  /* transition: all 0.5s; */
+  transition: all 0.9s;
   cursor: pointer;
   margin: 5px;
   margin-left: 40%;
+  position: absolute;
 }
 #button span {
   cursor: pointer;
@@ -77,40 +100,39 @@
   right: 0;
 }
 
-/* The animation */
+/* After animation */
 
 .main-tog {
-  position: fixed;
-  width: 30%;
-  background: rgba(255, 255, 255, 0.1);
-  letter-spacing: 2px;
-  top: 5%;
-  left: 5%;
-  text-align: center;
-  transition: ease-in 0.9s;
-}
-.logo-tog {
-  margin: 0px auto;
-  font-size: 75px;
-  font-family: 'Monoton', cursive;
-  color: rgb(255, 255, 89);
-  transition: ease-in 0.9s;
-
+  /* top: 10%;
+  left: 0%; */
+  transform: translate3d(-770px, 200px, 0px) scale3d(0.3, 4, 1) ;
+  transition: all 0.5s ease;
 }
 
 .line-tog {
-  width: 100%;
-  height: 10px;
-  background: rgb(255, 255, 89);
-  transition: ease-in 0.9s;
-
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .motto-tog {
-  color: #ffffff;
-  /* margin: 0px auto; */
-  font-size: 20px;
-  font-weight: bolder;
-  text-align: center;
-  margin-top: 10%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.logo-tog1 {
+  left: 2px;
+  top: 10px;
+}
+.logo-tog2 {
+  left: 2px;
+  top: 50px;
+}
+.logo-tog3 {
+  left: 2px;
+}
+.logo-tog4 {
+  left: 2px;
+}
+.logo-tog5 {
+  left: 2px;
 }

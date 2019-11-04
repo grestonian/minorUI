@@ -1,0 +1,26 @@
+.chatbox {
+  width: 40%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  left: 30%;
+  top: 20%;
+  visibility: hidden;
+}
+
+/* input[type = text] {
+  position: relative;
+  width: 85%;
+}
+
+input[type = submit] {
+  border-radius: 4px;
+  background-color: rgba(240, 210, 38, 0.973);
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 4px 2px;
+  position: relative;
+  cursor: pointer;
+} */
