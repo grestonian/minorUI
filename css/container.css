@@ -16,10 +16,11 @@
   transition: transform 0.5s ease;
 }
 .logo {
-  /* margin: 0px auto; */
+  display: inline-block;
   font-size: 150px;
   font-family: 'Monoton', cursive;
   color: rgb(255, 255, 89);
+  transition: display 0.5s ease;
 }
 
 .line {
@@ -73,7 +74,7 @@
   cursor: pointer;
   margin: 5px;
   margin-left: 40%;
-  position: absolute;
+  position: relative;
 }
 #button span {
   cursor: pointer;
@@ -103,9 +104,7 @@
 /* After animation */
 
 .main-tog {
-  /* top: 10%;
-  left: 0%; */
-  transform: translate3d(-770px, 200px, 0px) scale3d(0.3, 4, 1) ;
+  transform: translate3d(-65%, 40%, 0px) scale3d(0.2, 2.5, 1) ;
   transition: all 0.5s ease;
 }
 
@@ -119,20 +118,18 @@
   transition: opacity 0.5s ease;
 }
 
-.logo-tog1 {
-  left: 2px;
-  top: 10px;
+
+
+.logo-tog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 29px;
+  transform: scale3d(20, 1, 1);
+  transition: flex-direction 0.5s ease;
 }
-.logo-tog2 {
-  left: 2px;
-  top: 50px;
-}
-.logo-tog3 {
-  left: 2px;
-}
-.logo-tog4 {
-  left: 2px;
-}
-.logo-tog5 {
-  left: 2px;
+
+#button-tog {
+  margin-left: 500px;  
 }
