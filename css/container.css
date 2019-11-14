@@ -129,7 +129,3 @@
   transform: scale3d(20, 1, 1);
   transition: flex-direction 0.5s ease;
 }
-
-#button-tog {
-  margin-left: 500px;  
-}
